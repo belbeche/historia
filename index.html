@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploration Historique</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header style="background-color: lightseagreen;">
+        <div class="container">
+            <h1><img src="https://scriptzenit.fr/img/logo.png" alt="ScriptZenIT" width="100%" height="50%">Exploration Historique</h1>
+        </div>
+    </header>
+
+    <div class="container" style="background: black;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+        <ul class="nav-links" style="list-style-type: none;">
+            <li><a href="#" onclick="showCentury(21)">21e siècle</a></li>
+            <li><a href="#" onclick="showCentury(20)">20e siècle</a></li>
+            <li><a href="#" onclick="showCentury(19)">19e siècle</a></li>
+            <li><a href="#" onclick="showCentury(18)">18e siècle</a></li>
+            <li><a href="#" onclick="showCentury(17)">17e siècle</a></li>
+            <li><a href="#" onclick="showCentury(16)">16e siècle</a></li>
+            <li><a href="#" onclick="showCentury(15)">15e siècle</a></li>
+            <li><a href="#" onclick="showCentury(14)">14e siècle</a></li>
+            <li><a href="#" onclick="showCentury(13)">13e siècle</a></li>
+            <li><a href="#" onclick="showCentury(12)">12e siècle</a></li>
+            <li><a href="#" onclick="showCentury(11)">11e siècle</a></li>
+            <li><a href="#" onclick="showCentury(10)">10e siècle</a></li>
+            <li><a href="#" onclick="showCentury(9)">9e siècle</a></li>
+            <li><a href="#" onclick="showCentury(8)">8e siècle</a></li>
+            <li><a href="#" onclick="showCentury(7)">7e siècle</a></li>
+            <li><a href="#" onclick="showCentury(6)">6e siècle</a></li>
+            <li><a href="#" onclick="showCentury(5)">5e siècle</a></li>
+            <li><a href="#" onclick="showCentury(4)">4e siècle</a></li>
+            <li><a href="#" onclick="showCentury(3)">3e siècle</a></li>
+            <li><a href="#" onclick="showCentury(2)">2e siècle</a></li>
+            <li><a href="#" onclick="showCentury(1)">1er siècle</a></li>
+            <li><a href="#" onclick="showCentury(0)">Ère Commune (0e siècle)</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="centuries">
+            <div class="container">
+                <div id="century-details" style="padding: 10px;">
+                    <p>Sélectionnez un siècle pour voir les détails historiques.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz">
+            <div class="container">
+                <h2>Quiz Historique</h2>
+                <p>Testez vos connaissances avec ce quiz sur les siècles :</p>
+                <form id="quizForm">
+                    <label for="question1">Quel événement historique a marqué le 20e siècle ?</label><br>
+                    <input type="radio" id="answer1a" name="question1" value="a">
+                    <label for="answer1a">La Première Guerre mondiale</label><br>
+                    <input type="radio" id="answer1b" name="question1" value="b">
+                    <label for="answer1b">La Renaissance</label><br>
+                    <input type="radio" id="answer1c" name="question1" value="c">
+                    <label for="answer1c">La Guerre de Cent Ans</label><br><br>
+
+                    <label for="question2">Quel siècle a vu l'âge d'or de la civilisation grecque ?</label><br>
+                    <input type="radio" id="answer2a" name="question2" value="a">
+                    <label for="answer2a">5e siècle avant J.-C.</label><br>
+                    <input type="radio" id="answer2b" name="question2" value="b">
+                    <label for="answer2b">18e siècle</label><br>
+                    <input type="radio" id="answer2c" name="question2" value="c">
+                    <label for="answer2c">3e siècle</label><br><br>
+
+                    <label for="question3">Quel siècle a vu la Révolution française ?</label><br>
+                    <input type="radio" id="answer3a" name="question3" value="a">
+                    <label for="answer3a">16e siècle</label><br>
+                    <input type="radio" id="answer3b" name="question3" value="b">
+                    <label for="answer3b">20e siècle</label><br>
+                    <input type="radio" id="answer3c" name="question3" value="c">
+                    <label for="answer3c">18e siècle</label><br><br>
+
+                    <button type="submit">Soumettre</button>
+                </form>
+                <p id="quizResult"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Exploration Historique - Version 1.0</p>
+            <p>Réalisé par Walid BELBECHE</p>
+            <p>&copy; 2024 Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
